@@ -1,15 +1,10 @@
 from classes.meals import *
 from classes.mealbox import MealBox
+from classes.maindish import MainDishBuilder
 
-arroz = Rice("John", 13)
-feijao = Beans("Feijoada", 10)
-carne  = Meat("Picanha", 40)
+mealbox = MainDishBuilder()
 
-box = [arroz, feijao, carne]
-
-mealbox = MealBox()
-
-mealbox.add(box)
+mealbox.make_meal()
 
 print(mealbox._children)
 print(mealbox.get_price())
