@@ -26,6 +26,6 @@ def main():
     caixa1.add(caixa3)
 
     # Calculando o preço total da caixa 1
-    print(f"Preço total da caixa 1: {caixa1.get_price()}")
+    #print(f"Preço total da caixa 1: {caixa1.get_price()}")
 
 main()

@@ -32,8 +32,10 @@ class ProductComposed(ProductComponet):
     def get_price(self):
 
         child = 0
-        for child in range(len(self.children)):
+        for child in range(0, len(self.children)):
             print(self.children[child].get_price())
+            if(child == len(self.children)):
+                break
         
         total = self.price
         for child in self.children:
